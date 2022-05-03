@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8*6%7*$-sbib88)g^kkrtxmhus!k7obkr0pse1uyph0^bpe3gr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["blog-with-no-front.herokuapp.com"]
+ALLOWED_HOSTS = ["blog-with-no-front.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
