@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-8*6%7*$-sbib88)g^kkrtxmhus!k7obkr0pse1uyph0^bpe3gr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["blog-with-no-front.herokuapp.com", "127.0.0.1"]
 
 # Application definition
 
@@ -125,7 +125,8 @@ LOGOUT_REDIRECT_URL = 'home'
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
-        'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
+        'rest_framework.renderers.JSONRenderer',
+
     ]
 }
